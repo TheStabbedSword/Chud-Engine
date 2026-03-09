@@ -1,0 +1,12 @@
+// Main (Global) //
+
+windowName = Friday Night Funkin': Chud Engine
+gameVersion = 2.7.1
+engineVersion = 0.1
+
+// PlayState (Gameplay) //
+
+scoreTxt = Score 
+missesTxt = Misses 
+accuracyTxt = Accuracy 
+comboTxt = Combo
