@@ -73,6 +73,7 @@ enum Control
 	LEFT;
 	RIGHT;
 	DOWN;
+
 	RESET;
 	ACCEPT;
 	BACK;

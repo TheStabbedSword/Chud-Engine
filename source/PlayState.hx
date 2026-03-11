@@ -2023,7 +2023,10 @@ class PlayState extends MusicBeatState
 			}
 			else
 			{
-				badNoteCheck();
+				if (!ClientOptions.ghostTapping)
+				{
+					badNoteCheck();
+				}
 			}
 		}
 

@@ -17,6 +17,7 @@ class Main extends Sprite
 {
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels).
+	var framerate:Int = 60;
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 
@@ -25,7 +26,7 @@ class Main extends Sprite
 		super();
 		DiscordClient.initialize();
 		TextManager.init();
-		addChild(new FlxGame(gameWidth, gameHeight, TitleState, 240, 240, skipSplash, startFullscreen));
+		addChild(new FlxGame(gameWidth, gameHeight, TitleState, framerate, framerate, skipSplash, startFullscreen));
 		Application.current.window.title = TextManager.getTextString('windowName');
 
 		#if !mobile
